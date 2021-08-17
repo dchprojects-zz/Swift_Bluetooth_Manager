@@ -10,10 +10,7 @@ import UIKit
 struct RootViewController {
     
     static var viewController: UIViewController {
-        let viewController: UIViewController = .init()
-        viewController.view.backgroundColor = .white
-        viewController.title = "Root View Controller"
-        return UINavigationController.init(rootViewController: viewController)
+        return UINavigationController.init(rootViewController: ViewController.init(bluetoothManager: SBMBluetoothManager.shared))
     }
     
 }
