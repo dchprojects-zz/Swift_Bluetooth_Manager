@@ -10,8 +10,10 @@
 		223E341E26CB876E004EC20B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E341D26CB876E004EC20B /* AppDelegate.swift */; };
 		223E342726CB8772004EC20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 223E342626CB8772004EC20B /* Assets.xcassets */; };
 		223E342A26CB8772004EC20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223E342826CB8772004EC20B /* LaunchScreen.storyboard */; };
-		223E343526CB8772004EC20B /* Swift_Bluetooth_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E343426CB8772004EC20B /* Swift_Bluetooth_ManagerTests.swift */; };
 		223E344026CB8772004EC20B /* Swift_Bluetooth_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E343F26CB8772004EC20B /* Swift_Bluetooth_ManagerUITests.swift */; };
+		223E345426CB8FCC004EC20B /* SBMBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E345326CB8FCC004EC20B /* SBMBluetoothManager.swift */; };
+		223E345626CB926B004EC20B /* SBMBluetoothManager_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E345526CB926B004EC20B /* SBMBluetoothManager_Tests.swift */; };
+		223E345826CB962B004EC20B /* Constants_For_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E345726CB962B004EC20B /* Constants_For_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +40,13 @@
 		223E342926CB8772004EC20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		223E342B26CB8772004EC20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		223E343026CB8772004EC20B /* Swift_Bluetooth_ManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_Bluetooth_ManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		223E343426CB8772004EC20B /* Swift_Bluetooth_ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Bluetooth_ManagerTests.swift; sourceTree = "<group>"; };
 		223E343626CB8772004EC20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		223E343B26CB8772004EC20B /* Swift_Bluetooth_ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_Bluetooth_ManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		223E343F26CB8772004EC20B /* Swift_Bluetooth_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Bluetooth_ManagerUITests.swift; sourceTree = "<group>"; };
 		223E344126CB8772004EC20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		223E345326CB8FCC004EC20B /* SBMBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBMBluetoothManager.swift; sourceTree = "<group>"; };
+		223E345526CB926B004EC20B /* SBMBluetoothManager_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBMBluetoothManager_Tests.swift; sourceTree = "<group>"; };
+		223E345726CB962B004EC20B /* Constants_For_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants_For_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		223E341C26CB876E004EC20B /* Swift_Bluetooth_Manager */ = {
 			isa = PBXGroup;
 			children = (
+				223E345226CB8F94004EC20B /* Manager */,
 				223E344D26CB880B004EC20B /* Resources */,
 			);
 			path = Swift_Bluetooth_Manager;
@@ -101,7 +106,8 @@
 		223E343326CB8772004EC20B /* Swift_Bluetooth_ManagerTests */ = {
 			isa = PBXGroup;
 			children = (
-				223E343426CB8772004EC20B /* Swift_Bluetooth_ManagerTests.swift */,
+				223E345526CB926B004EC20B /* SBMBluetoothManager_Tests.swift */,
+				223E345726CB962B004EC20B /* Constants_For_Tests.swift */,
 				223E343626CB8772004EC20B /* Info.plist */,
 			);
 			path = Swift_Bluetooth_ManagerTests;
@@ -157,6 +163,14 @@
 				223E342B26CB8772004EC20B /* Info.plist */,
 			);
 			path = InfoPlist;
+			sourceTree = "<group>";
+		};
+		223E345226CB8F94004EC20B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				223E345326CB8FCC004EC20B /* SBMBluetoothManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +243,7 @@
 					};
 					223E342F26CB8772004EC20B = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = 223E341926CB876E004EC20B;
 					};
 					223E343A26CB8772004EC20B = {
@@ -289,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				223E341E26CB876E004EC20B /* AppDelegate.swift in Sources */,
+				223E345426CB8FCC004EC20B /* SBMBluetoothManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223E343526CB8772004EC20B /* Swift_Bluetooth_ManagerTests.swift in Sources */,
+				223E345626CB926B004EC20B /* SBMBluetoothManager_Tests.swift in Sources */,
+				223E345826CB962B004EC20B /* Constants_For_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +513,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CXRA2S6SCR;
 				INFOPLIST_FILE = Swift_Bluetooth_ManagerTests/Info.plist;
@@ -507,6 +525,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dcteam.Swift-Bluetooth-ManagerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift_Bluetooth_Manager.app/Swift_Bluetooth_Manager";
@@ -518,6 +537,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CXRA2S6SCR;
 				INFOPLIST_FILE = Swift_Bluetooth_ManagerTests/Info.plist;
