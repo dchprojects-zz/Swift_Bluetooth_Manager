@@ -14,6 +14,8 @@
 		223E345426CB8FCC004EC20B /* SBMBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E345326CB8FCC004EC20B /* SBMBluetoothManager.swift */; };
 		223E345626CB926B004EC20B /* SBMBluetoothManager_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E345526CB926B004EC20B /* SBMBluetoothManager_Tests.swift */; };
 		223E345826CB962B004EC20B /* Constants_For_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E345726CB962B004EC20B /* Constants_For_Tests.swift */; };
+		223E345B26CB973B004EC20B /* RootWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E345A26CB973B004EC20B /* RootWindow.swift */; };
+		223E345E26CB9772004EC20B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223E345D26CB9772004EC20B /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		223E345326CB8FCC004EC20B /* SBMBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBMBluetoothManager.swift; sourceTree = "<group>"; };
 		223E345526CB926B004EC20B /* SBMBluetoothManager_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBMBluetoothManager_Tests.swift; sourceTree = "<group>"; };
 		223E345726CB962B004EC20B /* Constants_For_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants_For_Tests.swift; sourceTree = "<group>"; };
+		223E345A26CB973B004EC20B /* RootWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWindow.swift; sourceTree = "<group>"; };
+		223E345D26CB9772004EC20B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		223E341C26CB876E004EC20B /* Swift_Bluetooth_Manager */ = {
 			isa = PBXGroup;
 			children = (
+				223E345C26CB976E004EC20B /* RootViewController */,
+				223E345926CB972E004EC20B /* RootWindow */,
 				223E345226CB8F94004EC20B /* Manager */,
 				223E344D26CB880B004EC20B /* Resources */,
 			);
@@ -171,6 +177,22 @@
 				223E345326CB8FCC004EC20B /* SBMBluetoothManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		223E345926CB972E004EC20B /* RootWindow */ = {
+			isa = PBXGroup;
+			children = (
+				223E345A26CB973B004EC20B /* RootWindow.swift */,
+			);
+			path = RootWindow;
+			sourceTree = "<group>";
+		};
+		223E345C26CB976E004EC20B /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				223E345D26CB9772004EC20B /* RootViewController.swift */,
+			);
+			path = RootViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,7 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223E345B26CB973B004EC20B /* RootWindow.swift in Sources */,
 				223E341E26CB876E004EC20B /* AppDelegate.swift in Sources */,
+				223E345E26CB9772004EC20B /* RootViewController.swift in Sources */,
 				223E345426CB8FCC004EC20B /* SBMBluetoothManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
