@@ -1,1 +1,6 @@
-# Swift_Bluetooth_Manager
+Simple Bluetooth scanner 
+
+## Features
+- BLE
+- Scan
+- Connect 
